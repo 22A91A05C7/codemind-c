@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,l;
+    int a,b,c;
     scanf("%d%d%d",&a,&b,&c);
-    if(a<=b&&a<=c)
+    if(a<b&&a<c)
     {
-        l=b+c;
+        printf("%d",b+c);
     }
-    else if (b<=a&&b<=c)
+    else if(b<a&&b<c)
     {
-        l=a+c;
+        printf("%d",a+c);
     }
-    else
+    else if(c<a&&c<b)
     {
-        l=a+b;
+        printf("%d",a+b);
     }
-    printf("%d",l);
 }
